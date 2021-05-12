@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Ejemplo - copia/styles/style.css">
+    <title>TIENDA</title>
+</head>
+
+<body>
+    <script src="./scripts/script.js"></script>
+    <div class="contenedor">
+        <header>
+            <div class="logo">
+                <a href="">Tu tienda</a>
+                <img src="https://i1.wp.com/www.apcomputadores.com/wp-content/uploads/2019/08/8ytDt6QE.jpg?fit=512%2C512&ssl=1"
+                    alt="logo" id="logo">
+            </div>
+            <nav>
+                <a href="#">Inicio</a>
+                <a href="#">Carrito</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <article>
+            <div id="compra">
+                <h2>Compra</h2>
+                <label for="cantidad">Cantidad de computadores comprados</label><br>
+                <input type="number" name="cantidad" id="cantidad" min="0" max="100">
+                <br>
+                <button id="button" onclick="comprar()">Comprar</button>
+            </div>
+            <div id="factura">
+                <h2>Orden de compra</h2>
+                <label for="valor">Valor de compra</label><br>
+                <input type="text" id="valorCompra"><br>
+                <label for="desc">Valor de descuento</label><br>
+                <input type="text" id="valorDesc"><br>
+                <label for="total">Total</label><br>
+                <input type="text" id="valorTotal"><br>
+                <div class="mostrar">
+                    <label for="porc">Su descuento</label>
+                </div>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <div class="link">
+            <a href="#">Inicio</a>
+            <a href="#">Carrito</a>
+            <a href="#">Contacto</a>
+        </div>
+        <div class="social">
+            <a href="#"><img src="./images/Logo_fit.png" alt=""></a>
+            <a href="#">TW</a>
+        </div>
+    </footer>
+</body>
+
+</html>
